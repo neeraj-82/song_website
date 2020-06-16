@@ -1,0 +1,189 @@
+@import 'color_font';
+@import 'mixin';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body
+{
+    background:$liner_blackish_color;
+}
+header
+{
+    width: 100%;
+    min-height: 10vh;
+    background:$white_color;
+   display: flex;   
+    .nav_icon
+    {
+      
+      background:$white_color;
+      @include display_center;
+      flex:.4;
+      padding: 5px;
+    .nav
+    {
+          font-size: 30px;
+          cursor: pointer;
+          color:black;
+          margin-left: 10px;
+      }
+     
+    
+ }
+   
+    .header_navbar
+    {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 250px;
+        height: 400px;
+        z-index:1;
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+        display:none;
+       
+         .list_container
+        {
+            @include align_end;
+            position:absolute;
+            top:0;
+            left:0;
+            @include width_height;
+            .cross
+            {
+                display: none;
+                font-size: 30px;
+                cursor: pointer;
+                color:black;
+              position: absolute;
+              top: 4%;
+              left: 12%;
+            }
+
+            .header_list
+            {
+                list-style: none;
+                margin-top: 10px;
+                padding: 30px;
+            }
+            li
+            {
+                font-size:18px;
+                margin: 10px 10px 25px 30px;
+               font-family: $font2;
+                font-weight:bold;
+               .fa
+               {
+                   color:$white_color;
+                   margin-right: 30px;
+               }
+               a{
+                   text-decoration: none;
+                   color:$white_color;
+               }
+               
+              
+            
+        }  
+        
+    
+    }
+       
+    }
+    .logo
+    {
+       
+       @include display_center;
+       flex:2;
+       flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .logo_pic
+        {
+             animation: animate 1s ease-in-out infinite;
+        }
+        @keyframes animate
+        {
+            0%
+            {
+                width: 25px;
+                height: 25px;
+            }
+            100%
+            {
+                @include small_width_height;
+            }
+        }
+        .logo_name
+        {
+           margin-left: 5px;
+            font-size:18px;
+            color: $blue_green_mix;
+            font-family:$font1;
+        }
+
+       
+    }
+    .ul_list_second
+    {
+        flex:3;
+        @include display_center;  
+        
+        .ul_list
+        {
+          display: flex;            
+          padding: 10px;
+            list-style: none;
+
+            li
+            {
+                font-family: $font2;
+                margin: 0px 20px 0px 10px;
+                font-size: 18px;
+                 a{
+                    text-decoration: none;
+                    color: black;
+                    }
+                a:hover
+                {
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+    .social_icon
+    {
+        flex:2;
+        @include display_center;
+
+        .fa
+        {
+            margin: 0px 20px 0px 10px;
+            font-size: 20px;
+        }
+        .fa:hover
+        {
+            font-weight: bold;
+        }
+        .fa-instagram
+        {
+           color:$orange_color;
+           
+        }
+        .fa-github-alt
+        {
+            color:$blue_green_mix;
+        }
+        .fa-facebook-square
+        {
+            color:$orange_color;
+        }
+    }
+    
+
+}

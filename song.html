@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music time</title>
+     <!-- css link -->
+     <link rel="stylesheet" type="text/css" href="design.css">
+     <!-- <link rel="stylesheet" type="text/css" href="design2.css"> -->
+       <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- goggle font link -->
+    <link href="https://fonts.googleapis.com/css?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Gelasio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Expletus+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <!-- header_section -->
+      <header class="song_header">
+
+        <!-- navbar_section -->
+        <div class="nav_icon">
+            <i class="fa fa-bars nav"></i>
+        </div>
+        <div class="header_navbar">
+            <div class="list_container">
+                <i class="fa fa-times cross"></i>
+                <ul class="header_list">
+                    <li><a href="interaction.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fa fa-music"></i>Sangeet</a></li>
+                    <li><a href="#"><i class="fa fa-address-book"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- logo_section_in_header -->
+        <div class="logo">
+            <img src="image/dil.png" class="logo_pic">
+            <h3 class="logo_name">Sangeet</h3>
+        </div>
+
+        <!-- list_in_header -->
+        <div class="ul_list_second">
+            <ul class="ul_list">
+                <li><a href="interaction.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-music"></i>Sangeet</a></li>
+               
+            </ul>
+        </div>
+
+        <!-- social_icons_in_header -->
+        <div class="social_icon">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-github-alt"></i></a>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+        </div>
+    </header>
+
+
+    <section class="song_section">
+        <div class="song_media_icon">
+            <div class="social_icon">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github-alt"></i></a>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+            </div> 
+          
+        
+
+        </div>
+        <div class="song_meter_box">
+            <div class="song_meter">
+                <div class="loader_circle">
+                    <div class="left_bumper">
+                        <span  class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+        
+                    </div>
+                    <div class="loader">
+                        <div class="loader_two">
+                            <!-- <img src="image/play2.jfif" class="start"> -->
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="right_bumper">
+                        <span  class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="song_detail">
+
+                    <div class="detail">
+                        <span>
+                            <p>Singer-Name:</p>
+                            <p class="singer_name"></p> 
+                        </span>  
+                       
+                        <span>
+                            <p>Song-Name:</p>
+                            <p class="music_name"></p> 
+                        </span>  
+                        
+                        <span>
+                            <p>Song-Duration:</p>
+                            <p class="song_duration"></p> 
+                        </span> 
+                        <span>
+                            <p>Artist:</p>
+                            <p class="artist_name"></p> 
+                        </span>  
+                    </div>
+                  
+                    
+                </div>
+               
+               
+                
+            </div>
+        </div>
+        <div class="music_album_box">
+            <div class="music_album" >
+                 <div class="music_image1">
+                    <img class="music_image" src="image/song3.jpg" > 
+                 </div>
+                <div class="music_name">
+                    <div class="music_name"><p>Duffermasti - Hum Char</p>
+                        <div class="play">
+                            <img src="image/play1.jfif" class="start" id="a" alt="a" >
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="music_album">
+                <div class="music_image1">  
+                    <img class="music_image" src="image/song1.jpg" alt="b"> 
+                </div>
+                <div class="music_name"><p>Illegal Weapon 2 - Street Dancer</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="b" alt="b" >
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+                 <div class="music_image1"> <img class="music_image" src="image/song2.jfif" alt="c"> </div>
+                <div class="music_name"><p>Humraah - Malang</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="c"  alt="c">
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+                <div class="music_image1">
+                    <img class="music_image" src="image/song4.jpg" >
+                </div>
+                <div class="music_name">
+                    <p>LAL-Bindi</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="d"  alt="d">
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+               <div class="music_image1">
+                <img class="music_image" src="image/song5.jpg" >
+               </div>
+                <div class="music_name">
+                    <p>Tenu Na Bol Pawaan</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="e"  alt="e">
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+               <div class="music_image1">
+                <img class="music_image" src="image/song6.jpg" >
+               </div>
+                <div class="music_name">
+                    <p>Pal-Jaleebi</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="f"  alt="f">
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+                  <div class="music_image1">
+                    <img class="music_image" src="image/song7.jpg" >
+                  </div>
+                <div class="music_name">
+                    <p>Mere Wala Sardar</p>
+                    <div class="play">
+                        <img src="image/play1.jfif" class="start" id="g"  alt="g">
+                    </div>
+                </div>
+            </div>
+            <div class="music_album">
+                <div class="music_image1">
+                  <img class="music_image" src="image/song8.jpg" >
+                </div>
+              <div class="music_name">
+                  <p>Koka - Khandaani Shafakhana</p>
+                  <div class="play">
+                      <img src="image/play1.jfif" class="start" id="h"  alt="h">
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+
+    <script src="music.js"></script>
+
+     <!-- jquery_coding -->
+     <script>
+        $(document).ready(function(){
+            $('.nav').click(function(){
+                $('.header_navbar').slideDown('slow');
+                $('.music_album_box').fadeOut('slow');
+                // $('.song_meter_box').fadeOut('slow');
+                $('.cross').show();
+                $(this).hide();
+            });
+
+            $('.cross').click(function(){
+                $('.header_navbar').slideUp('slow');
+                $('.music_album_box').fadeIn('slow');
+                // $('.song_meter_box').fadeIn('slow');
+                $('.nav').show();
+                $(this).hide();
+            });
+           $('.start').click(function(){
+            $('.music_album_box').css({"margin-top":"50vh"});
+                $('.song_meter_box').show('slow');
+               
+           });
+           $('.start').dblclick(function(){
+            $('.music_album_box').css({"margin-top":"10vh"});
+                $('.song_meter_box').hide('slow');
+               
+           });
+    
+        });
+    </script>
+   
+</body>
+</html>
