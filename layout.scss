@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// welcome.php layout
+.intro_section {
+    @include section;
+}
+
+.container {
+    @include container;
+    min-height: 350px;
+}
+
+.info_part {
+    @include welcome;
+    flex: 1;
+}
+
+.image {
+    flex: .5;
+    
+   
+}
+
+.information {
+    @include get_info_user;
+
+
+    .introduction {
+        flex: 1;
+        
+        padding: .5em;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       
+    }
+
+    .ask_name {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items:flex-start;
+        padding: .5em;
+        
+    }
+}
+
+
+.form_material {
+    flex: 1;
+    
+    padding: .5em;
+    display: flex;
+}
+
+.get_username {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .username {
+        flex: 1;
+        padding: .5em;
+       @include center;
+       flex-direction: column;
+    }
+
+    .continue {
+        flex: .8;
+        padding: .5em;
+        @include center;
+    }
+}
+
+// mail.php layout
+
+.signup_section {
+    @include section
+}
+
+.signup_container {
+    @include container;
+    min-height: 400px;
+}
+
+.signup_part {
+    @include welcome;
+    flex: 1;
+}
+
+.signup_image {
+    flex: .3;
+    padding: 1em;
+//    background: red;
+  
+   display: flex;
+   .pic{
+       flex:1;
+      
+    //    background: $golden;
+   }
+   .camera
+   {
+       flex: .3;
+    //    background: $white;
+      display: flex;
+       justify-content:flex-start ;
+       align-items: center;
+       z-index: 1;
+   }
+}
+
+.signup_info {
+    @include get_info_user;
+
+    .introduction {
+        flex: 1;
+        padding: .1em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .encourage {
+        flex: 1;
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items:flex-start;
+        padding: .5em;
+    }
+}
+
+.signup_material {
+    flex: 1;
+
+    display: flex;
+}
+
+.get_email {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .email {
+        flex: 1;
+        padding: .2em;
+      @include center;
+        flex-direction: column;
+    }
+
+    .password {
+        flex: 1;
+        padding: .2em;
+      @include center;
+        flex-direction: column;
+    }
+
+    .sign_button {
+        flex: .5;
+       
+        padding: .5em;
+        @include center;
+        flex-direction: column;
+    }
+}
+
+.login_section {
+    @include section
+}
+
+.login_container {
+    @include container;
+    min-height: 400px;
+}
+
+.login_part {
+    @include welcome;
+    flex: .3;
+    // background-color: blueviolet;
+}
+
+.login_image {
+    flex: .3;
+    padding: 1em;
+    // background: #8c0909;
+    // @include center;
+//     display: flex;
+//    justify-content: flex-end;
+    
+}
+
+.login_info {
+    @include get_info_user;
+
+    .instruction {
+        flex: 1;
+        // background: #343434;
+        display: flex;
+        padding: 1em;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .information {
+        flex: 1;
+        padding: 1em;
+        // background: #f4f4f4;
+    }
+}
+
+.login_material {
+    flex: 1.5;
+    padding: .5em;
+    display: flex;
+}
+
+.login_form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .login_email {
+        flex: 1;
+        // background: #3a4750;
+        @include center;
+        flex-direction: column;
+        padding: .8em;
+    }
+
+    .login_password {
+        flex: 1;
+        @include center;
+        flex-direction: column;
+        padding: .8em;
+        // background-color: #303841;
+    }
+
+    .add_feature {
+        flex: .5;
+        // background: #ea9215;
+        display: flex;
+
+        .remember
+        {
+            flex: 1;
+            // background: $golden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .forget
+        {
+            flex: 1;
+            // background: $white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .login {
+        flex: .3;
+        padding: .5em;
+        @include center;
+        // background: #eeeeee;
+    }
+}
